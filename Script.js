@@ -12,7 +12,7 @@ let all_store = [...store , ...store1]
 const addunique = arr => {
    let sum = 0;
    for(let i = 0; i < arr.length; i++){
-      if(arr.indexOf(arr[i]) !== arr.lastIndexOf(arr[i])){
+      if(arr.indexOf(arr[i]) == arr.lastIndexOf(arr[i])){
          sum += arr[i];
 
       };
@@ -28,7 +28,7 @@ console.log(addunique(all_store));
 const aaddunique = arr => {
    let sum = 0;
    for(let i = 0; i < arr.length; i++){
-      if(arr.indexOf(arr[i]) == arr.lastIndexOf(arr[i])){
+      if(arr.indexOf(arr[i]) !== arr.lastIndexOf(arr[i])){
          sum += arr[i];
 
       };
